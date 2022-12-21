@@ -13,5 +13,6 @@ public class StackExample {
         stack.push(10);
         stack.push(12);
         System.out.println(stack);
+        System.out.println("Test");
     }
 }
