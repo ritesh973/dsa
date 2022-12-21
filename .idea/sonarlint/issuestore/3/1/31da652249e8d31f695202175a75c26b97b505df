@@ -1,0 +1,16 @@
+
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÿ£ïî
+Y
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(öÿŸÄúÿÿÿÿ
+@
+java:S5411"*Use the primitive boolean expression here.(ß‡èõ
+N
+java:S1197"8Move the array designator from the variable to the type.(ÿ£ïî
+]
+java:S1126"BReplace this if-then-else statement by a single method invocation.(Óó·ûÿÿÿÿ
+D
+java:S1125"'Remove the unnecessary boolean literal.(ß‡èõ8²÷ª’0
+N
+java:S1197'"8Move the array designator from the variable to the type.(—¸×
+M	java:S106)"9Replace this use of System.out or System.err by a logger.( –¶k
