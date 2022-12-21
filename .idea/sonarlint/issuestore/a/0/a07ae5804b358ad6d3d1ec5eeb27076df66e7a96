@@ -1,12 +1,0 @@
-
-E
-java:S5411*"*Use the primitive boolean expression here.(ã®¥Çýÿÿÿÿ
-h	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰µºêøÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(âÓÐù
-S
-java:S1197 "8Move the array designator from the variable to the type.(‰µºêøÿÿÿÿ
-B
-java:S1125*"'Remove the unnecessary boolean literal.(ã®¥Çýÿÿÿÿ
-S
-java:S11974"8Move the array designator from the variable to the type.(êÄ«Ôÿÿÿÿÿ
-S	java:S1065"9Replace this use of System.out or System.err by a logger.(–‡Ê›úÿÿÿÿ

@@ -1,10 +1,0 @@
-
-f	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğœù‘
-f	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğœù‘
-f	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğœù‘
-N	java:S106"9Replace this use of System.out or System.err by a logger.(™¾¡Ş
-k
-java:S2234"UParameters to toh have the same names but not the same order as the method arguments.(¹„è
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ø…Ç
-p
-java:S2234"UParameters to toh have the same names but not the same order as the method arguments.(êµÑïüÿÿÿÿ
