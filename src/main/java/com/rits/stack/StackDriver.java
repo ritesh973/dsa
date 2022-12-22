@@ -8,6 +8,7 @@ package com.rits.stack;
  */
 public class StackDriver {
     public static void main(String[] args) {
+        System.out.println("---Array Based Stack Impl-----");
         DynamicArrayStack<Integer> stack = new DynamicArrayStack<>();
         stack.push(10);
         stack.push(12);
@@ -18,6 +19,16 @@ public class StackDriver {
         for (Integer data: stack) {
             System.out.println(data);
         }
-        System.out.println(stack.size());
+        System.out.println("---Linked List Based Stack Impl-----");
+
+        LlStack<Integer> llStack = new LlStack<>();
+        llStack.push(10);
+        llStack.push(20);
+        llStack.push(23);
+        llStack.pop();
+        for (Integer data: llStack) {
+            System.out.println(data);
+        }
+
     }
 }
