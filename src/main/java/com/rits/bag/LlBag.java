@@ -1,4 +1,4 @@
-package com.rits.stack;
+package com.rits.bag;
 
 import com.rits.common.ListIterator;
 import com.rits.common.Node;
@@ -10,12 +10,12 @@ import java.util.Iterator;
  * @version 1.0
  * @since 22/12/22
  */
-public class LlStack<Item> implements Iterable<Item> {
+public class LlBag<Item> implements Iterable<Item> {
 
     private Node head;
     private int N;
 
-    public void push(Item item){
+    public void add(Item item){
         Node oldNode = head;
         head = new Node();
         head.setItem(item);
@@ -28,12 +28,7 @@ public class LlStack<Item> implements Iterable<Item> {
     public boolean isEmpty(){
         return head == null;
     }
-    public Item pop(){
-        Item item = (Item) head.getItem();
-        head = head.getNext();
-        N--;
-        return item;
-    }
+
 
     @Override
     public Iterator<Item> iterator() {
