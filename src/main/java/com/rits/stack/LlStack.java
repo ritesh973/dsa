@@ -16,10 +16,9 @@ public class LlStack<Item> implements Iterable<Item> {
     private int N;
 
     public void push(Item item){
-        Node oldNode = head;
-        head = new Node();
-        head.setItem(item);
-        head.setNext(oldNode);
+        Node node = new Node(item);
+        node.setNext(head);
+        head = node;
         N++;
     }
     public int size(){

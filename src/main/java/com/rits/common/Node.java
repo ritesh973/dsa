@@ -9,6 +9,15 @@ public class Node<Item>{
     Item item;
     Node next;
 
+    public Node() {
+
+    }
+
+    public Node(Item data) {
+        this.item = data;
+        this.next = null;
+    }
+
     public Item getItem() {
         return item;
     }
