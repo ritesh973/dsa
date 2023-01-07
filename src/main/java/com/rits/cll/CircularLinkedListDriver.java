@@ -11,7 +11,15 @@ public class CircularLinkedListDriver {
         cll.insert(1,20);
         cll.insert(20,30);
         cll.insert(20,40);
-        cll.delete(40);
+        //cll.delete(40);
         cll.printList();
+        System.out.println();
+        System.out.println(cll.isCircular());
+        cll.removeCycle();
+        System.out.println();
+        System.out.println(cll.isCircular());
+        System.out.println();
+        cll.printList();
+
     }
 }

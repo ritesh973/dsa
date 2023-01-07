@@ -1,6 +1,7 @@
 package com.rits.cll;
 
 import com.rits.common.Node;
+import com.rits.ll.problems.LinkedListUtil;
 
 /**
  * @author Ritesh Singh
@@ -57,9 +58,18 @@ public class CircularLinkedList<Item> {
             return;
         }
         do {
-            System.out.println(tail.getItem() +" ");
+            System.out.print(tail.getItem() +" ");
             tail = tail.getNext();
-        } while (tail != myNode);
+        } while (tail != myNode && tail != null);
+    }
+    public boolean isCircular(){
+        System.out.println(LinkedListUtil.detectLoop(tail));
+        System.out.println(LinkedListUtil.floydDetectLoop(tail));
+        System.out.println(LinkedListUtil.getStarting(tail).getItem());
+        return LinkedListUtil.isCircular(tail);
+    }
+    public void removeCycle(){
+       LinkedListUtil.removeLoop(tail);
     }
 
 }
