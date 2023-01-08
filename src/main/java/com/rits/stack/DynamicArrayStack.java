@@ -16,6 +16,9 @@ public class DynamicArrayStack<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return N == 0;
     }
+    public Item top() {
+        return data[N-1];
+    }
 
     public int size() {
         return N;
