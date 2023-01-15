@@ -44,6 +44,10 @@ public class LlQueue<Item> implements Iterable<Item> {
         }
         return item;
     }
+    public Item front(){
+        Item item = (Item) head.getItem();
+        return item;
+    }
 
     @Override
     public Iterator<Item> iterator() {
