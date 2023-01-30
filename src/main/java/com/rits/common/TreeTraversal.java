@@ -1,6 +1,4 @@
-package com.rits.tree;
-
-import com.rits.common.TreeNode;
+package com.rits.common;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
