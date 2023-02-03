@@ -236,5 +236,7 @@ public class PatterPrint {
             }
             System.out.println();
         }
+        System.out.println();
     }
+
 }
