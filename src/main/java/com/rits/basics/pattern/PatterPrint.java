@@ -11,9 +11,9 @@ import java.io.InputStreamReader;
  */
 public class PatterPrint {
     public static void main(String[] args) throws IOException {
-        System.out.printf("Provide value of N ");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+//        System.out.printf("Provide value of N ");
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int n = Integer.parseInt(br.readLine());
 
         /*System.out.println("Printing Full Pyramid");
         for (int row = 0; row < n; row++)
@@ -223,7 +223,7 @@ public class PatterPrint {
 //        ABCBA
 //        ABCDCBA
 //        ABCDEDCBA
-        for (int i = 0; i < n; i++) {
+       /* for (int i = 0; i < n; i++) {
             for (int j = 0; j < i+1; j++) {
                 int ans = j+1;
                 char ch = (char) ('A'+ans-1);
@@ -236,7 +236,71 @@ public class PatterPrint {
             }
             System.out.println();
         }
-        System.out.println();
+        System.out.println();*/
+
+
+        /*System.out.println("Full Pyramid");
+
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n-row-1 ; col++) {
+                System.out.print(" ");
+            }
+            int count=row+1;
+            for (int col = 0; col < row+1; col++) {
+                System.out.print(count);
+                count++;
+            }
+            int start= 2*row;
+            for (int col = 0; col < row; col++) {
+                System.out.print(start);
+                start--;
+            }
+
+            System.out.println();
+        }*/
+
+       /* System.out.println("Hollow Pyramid");
+
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n-row-1 ; col++) {
+                System.out.print(" ");
+            }
+            int start=1;
+            for (int col = 0; col < 2*row+1; col++) {
+                if (row == 0 || row == n-1){
+                    if (col%2 == 0){
+                        System.out.print(start);
+                        start++;
+                    }else {
+                        System.out.print(" ");
+                    }
+
+                }else {
+                    if (col == 0){
+                        System.out.print("1");
+                    } else if (col == 2*row) {
+                        System.out.print(row+1);
+                    }else {
+                        System.out.print(" ");
+                    }
+
+                }
+
+            }
+            System.out.println();
+        }*/
+
+        boolean a = false;
+        boolean b = true;
+        System.out.println(5&10);
+        System.out.println(3|4);
+        System.out.println(5<<3);
+        System.out.println(8>>10);
+
+        int data = 5;
+//        System.out.println(data++);
+//        System.out.println(++data);
+        System.out.println((++data)*(++data));
     }
 
 }

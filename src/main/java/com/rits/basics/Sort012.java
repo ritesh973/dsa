@@ -53,7 +53,6 @@ public class Sort012 {
                     a[high] = a[current];
                     a[current] = temp;
                     high--;
-                    current++;
                 } else {
                     current++;
                 }
@@ -63,8 +62,8 @@ public class Sort012 {
     }
 
     public static void main(String[] args) {
-        int n = 5;
-        int arr[]= {0, 2, 1, 2, 0};
+        int n = 3;
+        int arr[]= {2,0,1};
         dutchFlag(arr,n);
     }
 }
