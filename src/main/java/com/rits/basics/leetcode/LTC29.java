@@ -25,7 +25,6 @@ public class LTC29 {
         return sign == -1 ? -quotient : quotient;
 
     }
-
     public static void main(String[] args) {
         System.out.println(divide(10,3));
 
