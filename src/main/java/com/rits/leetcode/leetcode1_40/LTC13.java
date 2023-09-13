@@ -1,4 +1,4 @@
-package com.rits.basics.leetcode;
+package com.rits.leetcode.leetcode1_40;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.rits.basics.leetcode;
+package com.rits.leetcode.leetcode1_40;
 
 import com.rits.common.ListNode;
 
@@ -7,8 +7,32 @@ import com.rits.common.ListNode;
  * @created on 24/08/2023
  * @project dsa
  */
-public class LTC23 {
-
+public class LTC21 {
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode head = new ListNode();
+        ListNode temp = head;
+        while (list1 != null && list2 != null) {
+            if (list1.val <= list2.val) {
+                head.next = list1;
+                list1 = list1.next;
+            } else {
+                head.next = list2;
+                list2 = list2.next;
+            }
+            head = head.next;
+        }
+        while (list1 != null) {
+            head.next = list1;
+            head = head.next;
+            list1 = list1.next;
+        }
+        while (list2 != null) {
+            head.next = list2;
+            head = head.next;
+            list2 = list2.next;
+        }
+        return temp.next;
+    }
     public static ListNode mergeTwoListsRecursive(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
         if (list2 == null) return list1;
@@ -23,23 +47,11 @@ public class LTC23 {
         return head;
     }
 
-    public static ListNode mergeKLists(ListNode[] lists) {
-        if (lists.length == 0) return null;
-        if (lists.length == 1) return lists[0];
-        ListNode listNode = mergeTwoListsRecursive(lists[0], lists[1]);
-        for (int i = 2; i < lists.length; i++) {
-            listNode = LTC21.mergeTwoListsRecursive(listNode, lists[i]);
-        }
-        return listNode;
-    }
     public static void main(String[] args) {
         ListNode head1 = new ListNode(1);
         ListNode head2 = new ListNode(1);
         head2.next = new ListNode(10);
-        ListNode head3 = new ListNode(1);
-        head3.next = new ListNode(23);
-        ListNode[] listNodes = {head1,head2,head3};
-        ListNode listNode = mergeKLists(listNodes);
+        ListNode listNode = mergeTwoListsRecursive(head1, head2);
         while (listNode.next != null) {
             System.out.print(listNode.val + " ");
             listNode = listNode.next;

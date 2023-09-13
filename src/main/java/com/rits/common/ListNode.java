@@ -1,7 +1,5 @@
 package com.rits.common;
 
-import com.rits.basics.leetcode.LTC21;
-
 /**
  * @author rits
  * @created on 24/08/2023
